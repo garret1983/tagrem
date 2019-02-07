@@ -9,27 +9,3 @@
   font-size: 42px;
   font-weight: 200;
 }
-
-/* Element Specification
-- Content width: 960px
-- Body:
-o Background image: tan.jpg
-o Font-family: Lato ( You can get it from http://fonts.googleapis.com/css? family=Lato:300,400,700)
-
-- H1, h2, h3 :
-o Color: #002b5a
-o Bottom margin: 42px
-o Text Style: capitalize. - h1:
-o Font-size:42px;
-o Font-weight: 200
-
- - h2:
-o Font-size:40px;
-o Font Weight: 200 
-- h3
-o Font-size:15px
-o Font Weight: normal - <p> tag on header content:
-o Color:#333
-o Font Family: Lato o Font Size:18px
-- <p> tag on light-gray box: o Font-size:12px
-o Text alignment: justify */
