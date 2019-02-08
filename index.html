@@ -9,7 +9,7 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
     />
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
@@ -18,6 +18,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
     <script src="http://fonts.googleapis.com/css? family=Lato:300,400,700"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+
   </head>
   <body>
     <div class="div">
@@ -104,6 +105,7 @@
       </div>
     </div>
 
+
 <div class="card ml-5 mt-5">
 <div class="container-fluid">
   <h1>In Gravida</h1>
@@ -163,15 +165,14 @@
          </div>
   </div>
  </div>
- </div>
-
+</div>
  <br>
 
 <div class="card ml-5">
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-8 mt-3">
-          <h1>Products</h1>
+          <h1 class="products">Products</h1>
         </div>
           <div class="col-md-4 mt-3 mb-3">
             <h5>Filter By</h5>
@@ -180,7 +181,7 @@
                 <option value="all">All</option>
                 <option value="less">$500 or less</option>
                 <option value="five">From $500 to $1000</option>
-                <option value="thousand">Fron $1000 to $2000</option>
+                <option value="thousand">From $1000 to $2000</option>
                 <option value="twoThousand">$2000 or more </option>
               </select>
           </form>    
@@ -191,52 +192,78 @@
     <div class="row">
       <div class="card ml-3 mb-4 mr-3" style="width: 18rem;">
         <div class="card-body">
-          <h3 class="card-title">Product title 1</h3>
-          <h6 class="product-price">Starting at $500</h6>
+          <h3 class="card-title">Product Title 1</h3>
+          <h6 class="text-primary">Starting at $500</h6>
           <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
           <img class="card-img-bottom" src="images/cereal_b.jpg" alt="Ceral">
-          <a href="#" class="btn btn-primary mt-3">Learn More ></a>
+          <button type="button" class="btn btn-primary mt-3" data-toggle="modal" data-target="#product1">
+              Learn More >
+            </button>
         </div>
       </div>
 
       <div class="card ml-3 mb-4 mr-3" style="width: 18rem;">
           <div class="card-body">
-            <h3 class="card-title">Product title 2</h3>
-            <h6 class="product-price">Starting at $1900</h6>
+            <h3 class="card-title">Product Title 2</h3>
+            <h6 class="text-primary">Starting at $1900</h6>
             <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
             <img class="card-img-bottom" src="images/flower_b.jpg" alt="Ceral">
-            <a href="#" class="btn btn-primary mt-3">Learn More ></a>
+            <button type="button" class="btn btn-primary mt-3" data-toggle="modal" data-target="#product2">
+                Learn More >
+              </button>
           </div>
       </div>
 
       <div class="card ml-3 mb-4 mr-3" style="width: 18rem;">
           <div class="card-body">
-            <h3 class="card-title">Product title 3</h3>
-            <h6 class="product-price">Starting at $2730</h6>
+            <h3 class="card-title">Product Title 3</h3>
+            <h6 class="text-primary">Starting at $2730</h6>
             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
             <img class="card-img-bottom" src="images/machine_b.jpg" alt="Ceral">
-            <a href="#" class="btn btn-primary mt-3">Learn More ></a>
+            <button type="button" class="btn btn-primary mt-3" data-toggle="modal" data-target="#product3">
+                Learn More >
+              </button>
           </div>
       </div>
 
       <div class="card ml-3 mb-4 mr-3" style="width: 18rem;">
           <div class="card-body">
-            <h3 class="card-title">Product title 4</h3>
-            <h6 class="product-price">Starting at $731</h6>
+            <h3 class="card-title">Product Title 4</h3>
+            <h6 class="text-primary">Starting at $731</h6>
             <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
             <img class="card-img-bottom" src="images/candy_b.jpg" alt="Ceral">
-            <a href="#" class="btn btn-primary mt-3">Learn More ></a>
+            <button type="button" class="btn btn-primary mt-3" data-toggle="modal" data-target="#product4">
+                Learn More >
+              </button>
           </div>
       </div>
 
-
-
-  
     </div> 
   </div>
 </div>
 
+  <!-- Modal 1 -->
+  <div class="modal fade" id="product1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">  
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h4>Product Title 1</h4>
+          <h6>Starting at $500</h6>
+          <div class="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam corporis libero nisi repellat voluptatibus aperiam nostrum suscipit corrupti modi assumenda obcaecati reiciendis neque, totam labore, deleniti iusto architecto laboriosam perferendis laudantium dignissimos. Praesentium at, nesciunt itaque reiciendis sint dicta. Esse atque natus alias quas magni et placeat omnis ea officia.</div>
 
+          <img class="card-img-bottom" src="images/cereal_b.jpg" alt="Ceral">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary float-left">Buy Online ></button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   </body>
 </html>
