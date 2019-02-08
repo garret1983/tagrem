@@ -21,12 +21,18 @@ h2 {
 }
 
 h3 {
-  font-size: 15px;
+  font-size: 17px;
   font-weight: normal;
 }
 
 h5 {
   color: #002b5a;
+  font-weight: normal;
+}
+
+h6 {
+  font-weight: normal;
+  font-size: 15px;
 }
 
 p {
@@ -36,4 +42,45 @@ p {
 
 .card-text {
   font-size: 12px;
+}
+
+#stateFinder {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+#loremText {
+  color: #002b5a;
+  margin-bottom: 5px;
+  font-size: 12px;
+}
+
+#stateList {
+  color: #002b5a;
+  font-size: 13px;
+}
+
+.btn1 {
+  background-color: #002b5a;
+  color: #ffffff;
+  font-size: 14px;
+  border-radius: 3px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), 2px #fff inset;
+}
+
+.btn2 {
+  background-color: #ffffff;
+  color: #002b5a;
+  font-size: 14px;
+  border-radius: 3px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), 2px #fff inset;
+}
+#card-title {
+  color: #002b5a;
+  font-size: 24px;
+}
+
+#price {
+  color: #4987ca;
+  font-size: 19px;
 }
